@@ -46,5 +46,5 @@ require("formatter").setup {
   }
 }
 
-vim.keymap.set('n', '<leader>f',':Format<CR>')
-vim.keymap.set('n', '<leader>F',':FormatWrite<CR>')
+vim.keymap.set('n', '<leader>F',':Format<CR>')
+vim.keymap.set('n', '<leader>f',':FormatWrite<CR>')
