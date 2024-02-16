@@ -5,6 +5,7 @@ vim.cmd([[filetype plugin indent on]])
 
 
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.wildmenu = true
 vim.opt.wildmode = "longest:full,full"
 vim.opt.cursorline = true

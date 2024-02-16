@@ -20,6 +20,9 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'christoomey/vim-tmux-navigator'
+
+  use "github/copilot.vim"
+
   use { "ibhagwan/fzf-lua",
   -- optional for icon support
   requires = { "nvim-tree/nvim-web-devicons" }
@@ -48,6 +51,7 @@ return require('packer').startup(function(use)
       requires = {"nvim-lua/plenary.nvim"}
   }
   use "nvim-lua/plenary.nvim"
+  use 'lervag/vimtex'
   use "ThePrimeagen/harpoon"
   use "lukas-reineke/indent-blankline.nvim"
   use {
