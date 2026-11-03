@@ -11,23 +11,36 @@ set -g @plugin 'tmux-plugins/tmux-sidebar'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-fpp'
-set -g @plugin 'dracula/tmux'
+set -g @plugin 'schnierstein/tmux'
+#set -g @plugin 'dracula/tmux'
 set -g @plugin 'christoomey/vim-tmux-navigator'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'laktak/extrakto'
 
 ############################
 
 
 ########DRACULA########
 
-set -g @dracula-plugins "battery cpu-usage ram-usage"
+set -g @dracula-plugins "network-bandwidth network-vpn battery cpu-usage ram-usage time"
 set -g @dracula-show-powerline true
 set -g @dracula-show-fahrenheit false
 set -g @dracula-show-location false
 set -g @dracula-show-left-icon session
 set -g @dracula-left-icon-padding 0
-set -g @dracula-battery-label "Battery"
+set -g @dracula-battery-label "B " 
 set -g @dracula-border-contrast true
 set -g @dracula-show-flags true
+set -g @dracula-show-timezone false
+set -g @dracula-time-format "%a %x %R"
+set -g @dracula-network-vpn-verbose true
+set -g @dracula-network-vpn-interface "cscotun0"
+set -g @dracula-network-vpn-label "VPN "
+set -g @dracula-network-vpn-not-found-label "NO VPN"
+set -g @dracula-network-ethernet-label "󰈀 "
+set -g @dracula-network-offline-label "󰖪 "
+set -g @dracula-network-wifi-label "󰖩 "
+set -g @dracula-network-bandwidth "cscotun0"
 set -g status-position top
 
 #######################
